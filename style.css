@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+
+* {
+	box-sizing: border-box;
+	font-weight: bold;
+	font-size: 1.1em;
+	font-family: 'Kaushan Script', cursive;
+}
+body {
+	background-image: url('Screen.jpg');
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+
+	background-attachment: fixed;
+	color: #f4f4f4;
+	text-align: center;
+}
+.container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	height: 50vh;
+}
+
+.searchbox {
+	border: 0;
+	border-radius: 10px 10px 10px 10px;
+	padding: 10px;
+	max-width: 100%;
+	background: #2e1e07;
+	box-shadow: 3px 3px 3px #2e1e07ce;
+}
+
+.card {
+	width: 50%;
+	height: 100px;
+}
+
+.searchBtn {
+	border: 0;
+	border-radius: 10px 10px 10px 10px;
+	padding: 10px;
+	max-width: 100%;
+	background: #2e1e07;
+	margin-top: 10px;
+	box-shadow: 3px 3px 3px #2e1e07;
+}
+
+.searchbox:focus {
+	outline: 0;
+}
+
+.searchBtn {
+	outline: 0;
+	transition: background-color 5s ease-out;
+}
+
+.searchBtn:hover {
+	outline: 0;
+	background-color: rgba(75, 162, 63, 0.774);
+	cursor: pointer;
+	transform: scale(0.9);
+}
+
+.searchBtn:focus {
+	outline: 0;
+	transition: background-color 1s ease-out;
+}
+
+.results {
+	padding: 50px;
+}
+
+.resultBody {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background: #000;
+	margin: 10px;
+	color: #fff;
+	text-align: center;
+	padding-top: 5px;
+	align-items: center;
+	border-radius: 5px;
+}
+
+img {
+	width: 150px;
+	height: 150px;
+	border-radius: 10px;
+}
+
+/* @media screen and (max-width: 2560px) {
+	body {
+		width: 90%;
+		max-width: 900px;
+		margin: 0 auto;
+		font-size: 50px;
+	}
+	.searchbox {
+		width: 50vh;
+		height: 50px;
+	}
+} */
