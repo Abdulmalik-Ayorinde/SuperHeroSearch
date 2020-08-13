@@ -1,10 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:ital@1&display=swap');
 
 * {
 	box-sizing: border-box;
 	font-weight: bold;
 	font-size: 1.1em;
-	font-family: 'Kaushan Script', cursive;
+	font-family: 'Comic Neue', cursive;
 }
 body {
 	background-image: url('Screen.jpg');
@@ -16,6 +16,25 @@ body {
 	color: #f4f4f4;
 	text-align: center;
 }
+
+.nav {
+	display: flex;
+	background: #000;
+	width: auto;
+	height: 30px;
+	align-items: center;
+	justify-content: space-around;
+	padding: 0 80px;
+	/* box-shadow: 5px 5px 5px #2b2424; */
+	color: #f4f4f4;
+}
+
+a {
+	color: #f4f4f4;
+	text-decoration: none;
+	font-size: smaller;
+}
+
 .container {
 	display: flex;
 	flex-direction: column;
@@ -70,6 +89,8 @@ body {
 }
 
 .results {
+	/* background: linear-gradient(to right, rgb(0, 251, 255), rgb(74, 162, 63)); */
+	/* box-shadow: 5px 5px 5px rgba(169, 180, 117, 0.979); */
 	padding: 50px;
 }
 
@@ -87,8 +108,8 @@ body {
 }
 
 img {
-	width: 150px;
-	height: 150px;
+	width: 100px;
+	height: 100px;
 	border-radius: 10px;
 }
 
