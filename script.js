@@ -4,15 +4,21 @@ var results = document.getElementById('results')
 var body = document.querySelector('body')
 const box = searchBox.value
 
+let details = []
+
 function getText(data) {
 	var box = searchBox.value
 	// console.log(box)
+
+	results.innerHTML = ''
 	fetch(`https://www.superheroapi.com/api.php/903577863471587/search/${box}`)
 		.then((resp) => resp.json())
 		.then((data) => {
 			const info = data.results
-			if (box === undefined) {
-				prompt('Kindly input a name')
+			if (info == undefined) {
+				alert(
+					'Ooops We do not currently have that name kindly search another name'
+				)
 			} else {
 				for (let i = 0; i < info.length; i++) {
 					// console.log(info[i])
